@@ -1,0 +1,5 @@
+Account activation
+
+Thank you for your registration.
+
+Before you can log in, you have to click here to activate your account: {{ url }}

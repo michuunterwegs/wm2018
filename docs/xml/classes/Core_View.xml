@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Core\View" namespace="Core" name="View" abstract="false" final="false" start="10" end="66">
+  <file path="H:/XAMPP/htdocs/app/Core" file="View.php" realpath="H:/XAMPP/htdocs/app/Core/View.php" size="1773" time="2018-05-21T08:59:24+00:00" unixtime="1526893164" sha1="66b31833520dc515de4fe2f26e194eb6cb939e6e" relative="Core/View.php"/>
+  <docblock>
+    <description compact="Base view">PHP version 7.0</description>
+  </docblock>
+  <method name="render" start="20" end="31" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Render a view file"/>
+      <param description="The view file" type="string" variable="$view"/>
+      <param description="Associative array of data to display in the view (optional)" type="array" variable="$args"/>
+      <return type="object">
+        <type full="Core\void" namespace="Core" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="view" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="array" default=""/>
+  </method>
+  <method name="renderTemplate" start="40" end="43" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Render a view template using Twig"/>
+      <param description="The template file" type="string" variable="$template"/>
+      <param description="Associative array of data to display in the view (optional)" type="array" variable="$args"/>
+      <return type="object">
+        <type full="Core\void" namespace="Core" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="template" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="array" default=""/>
+  </method>
+  <method name="getTemplate" start="52" end="65" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the contents of a view template using Twig"/>
+      <param description="The template file" type="string" variable="$template"/>
+      <param description="Associative array of data to display in the view (optional)" type="array" variable="$args"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="template" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="array" default=""/>
+  </method>
+</class>

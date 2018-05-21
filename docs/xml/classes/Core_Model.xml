@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Core\Model" namespace="Core" name="Model" abstract="true" final="false" start="13" end="47">
+  <file path="H:/XAMPP/htdocs/app/Core" file="Model.php" realpath="H:/XAMPP/htdocs/app/Core/Model.php" size="1072" time="2018-05-20T21:03:38+00:00" unixtime="1526850218" sha1="5eb3c982a201aefce4581eb3b5dbeb53eee74311" relative="Core/Model.php"/>
+  <docblock>
+    <description compact="Base model">PHP version 7.0</description>
+  </docblock>
+  <method name="getDB" start="22" end="35" abstract="false" final="false" static="true" visibility="protected">
+    <docblock>
+      <description compact="Get the PDO User database connection"/>
+      <param description="DB name" type="string"/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="whereLike" start="43" end="46" abstract="false" final="false" static="true" visibility="protected">
+    <docblock>
+      <description compact="Convert searchterm for mysql &quot;where like&quot; query"/>
+      <param description="String to convert" type="string" variable="$string"/>
+      <return description="Converted string" type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="Models\RememberedLogin" namespace="Models" name="RememberedLogin"/>
+    <extender full="Models\User" namespace="Models" name="User"/>
+  </extenders>
+</class>

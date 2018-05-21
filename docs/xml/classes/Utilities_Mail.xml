@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Utilities\Mail" namespace="Utilities" name="Mail" abstract="false" final="false" start="14" end="60">
+  <file path="H:/XAMPP/htdocs/app/Utilities" file="Mail.php" realpath="H:/XAMPP/htdocs/app/Utilities/Mail.php" size="1953" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="7dc56bd407f503957b96f64259772dba3619b465" relative="Utilities/Mail.php"/>
+  <docblock>
+    <description compact="Provides email services">PHP version 7.0</description>
+  </docblock>
+  <method name="send" start="26" end="59" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Send a email"/>
+      <param description="Recipient" type="string" variable="$to"/>
+      <param description="Subject" type="string" variable="$subject"/>
+      <param description="Text-only content of the message" type="string" variable="$text"/>
+      <param description="HTML content of the message" type="string" variable="$html"/>
+      <return description="True if email could be sent, false otherwise" type="boolean"/>
+    </docblock>
+    <parameter name="to" byreference="false" type="{unknown}"/>
+    <parameter name="subject" byreference="false" type="{unknown}"/>
+    <parameter name="text" byreference="false" type="{unknown}"/>
+    <parameter name="html" byreference="false" type="{unknown}"/>
+  </method>
+</class>
