@@ -350,7 +350,8 @@ class User extends \Core\Model
     {
         $this->password = $password;
 
-        if ($this->validatePassword()) {
+        if (Validator::noWhitespace()->length(6, null)->validate($this->password)) {
+            
             $password_hash = password_hash($this->password, PASSWORD_DEFAULT);
 
             $sql = 'UPDATE users
@@ -366,6 +367,7 @@ class User extends \Core\Model
                                           
             return $stmt->execute();
         }
+
         return false;
     }
 
