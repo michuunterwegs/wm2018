@@ -3,6 +3,24 @@ body {
   height: 100%;
 }
 
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("/images/wallpaper.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  z-index: -9;
+}
+
 body {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -15,13 +33,15 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-image: url("/images/wallpaper.jpg");
+  background-attachment: fixed;
+  background-position: center; 
 }
 
 .form-signin {
   width: 100%;
   max-width: 330px;
-  padding: 15px;
+  padding: 25px;
   margin: 0 auto;
 }
 .form-signin .checkbox {

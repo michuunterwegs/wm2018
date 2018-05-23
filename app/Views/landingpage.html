@@ -4,15 +4,13 @@
 {% block customCSS %}<link rel="stylesheet" href="/css/login.css">{% endblock %}
 
 {% block body %}
-
+<div class="blur"></div>
     <form class="form-signin" action="/login" method="post">
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Benutzername" required autofocus>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
         <div class="checkbox">
             <label>
-                <input type="checkbox" name="remember_me" value="remember-me" {% if remember_me %} checked="checked"{% endif %}> Remember me
+                <input type="checkbox" name="remember_me" value="remember-me" {% if remember_me %} checked="checked"{% endif %}> Merke Anmeldung
             </label>
         </div>
         {% for message in flash_messages %}
@@ -20,9 +18,9 @@
                 {{ message.body }}
             </div>
         {% endfor %}
-        <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-bottom:2px">Login</button>
-        <a href="/signup/new" class="float-left" style="margin-top:2px">Sign up</a>
-        <a href="/password/forgot" class="float-right" style="margin-top:2px">Forgot password?</a>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-bottom:2px">Anmelden</button>
+        <a href="/signup/new" class="float-left" style="margin-top:2px">Registrieren</a>
+        <a href="/password/forgot" class="float-right" style="margin-top:2px">Password vergessen</a>
     </form>
 
 {% endblock %}
