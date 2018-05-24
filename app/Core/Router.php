@@ -78,21 +78,15 @@ class Router
 
                 $action = $this->request->params['action'];
                 $action = $this->convertToCamelCase($action);
-
-                if (is_callable([$controller_object, $action])) {
-
-                    $controller_object->$action();
-
-                } else {
-                    throw new \Exception("Method $action (in controller $controller) not found");
-                }
+                
+                $controller_object->$action();
 
             } else {
-                throw new \Exception("Controller class $controller not found");
+                throw new \Exception('No route matched for '. $this->request->uri(), 404);
             }
 
         } else {
-            throw new \Exception('No route matched.', 404);
+            throw new \Exception('No route matched for '. $this->request->uri(), 404);
         }
     }
 
