@@ -95,6 +95,11 @@ class User extends \Core\Model
             Flash::addMessage('Username should only contain alphanumeric charactes and be at least 3 charachters long.', Flash::ERROR);
             $noErrors = false;
         }
+
+        if (static::usernameExists($username)) {
+            Flash::addMessage('Username allready taken.', Flash::ERROR);
+            $noErrors = false;
+        }
         
         if (!Validator::email()->validate($email)) {
             Flash::addMessage('Invalid email address.', Flash::ERROR);
@@ -102,7 +107,7 @@ class User extends \Core\Model
         }
 
         if (static::emailExists($email)) {
-            Flash::addMessage('Email address already taken.', Flash::ERROR);
+            Flash::addMessage('Email address allready taken.', Flash::ERROR);
             $noErrors = false;
         }
 
@@ -123,6 +128,19 @@ class User extends \Core\Model
     public static function emailExists($email)
     {
         $user = static::findByEmail($email);
+
+        return $user ? true : false;
+    }
+
+    /**
+     * See if a user record already exists with the specified username
+     *
+     * @param string $username Username to search for
+     * @return boolean True if a record already exists with the specified username, false otherwise
+     */
+    public static function usernameExists($username)
+    {
+        $user = static::findByUsername($username);
 
         return $user ? true : false;
     }
