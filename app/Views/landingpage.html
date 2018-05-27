@@ -4,13 +4,13 @@
 {% block customCSS %}<link rel="stylesheet" href="/css/login.css">{% endblock %}
 
 {% block body %}
-<div class="blur"></div>
+    <div class="blur"></div>
     <form class="form-signin" action="/login" method="post">
-        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Benutzername" required autofocus>
+        <input type="text" name="username" id="inputUsername" class="form-control" placeholder="Benutzername" required autofocus>
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
         <div class="checkbox">
             <label>
-                <input type="checkbox" name="remember_me" value="remember-me" {% if remember_me %} checked="checked"{% endif %}> Merke Anmeldung
+                <input type="checkbox" name="remember_me" value="remember-me" {% if remember_me %} checked="checked"{% endif %}> Eingeloggt bleiben
             </label>
         </div>
         {% for message in flash_messages %}
@@ -19,8 +19,7 @@
             </div>
         {% endfor %}
         <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-bottom:2px">Anmelden</button>
-        <a href="/signup/new" class="float-left" style="margin-top:2px">Registrieren</a>
+        <a href="/signup" class="float-left" style="margin-top:2px">Registrieren</a>
         <a href="/password/forgot" class="float-right" style="margin-top:2px">Password vergessen</a>
     </form>
-
 {% endblock %}

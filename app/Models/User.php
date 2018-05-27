@@ -150,6 +150,28 @@ class User extends \Core\Model
     }
 
     /**
+     * Find a user model by username
+     *
+     * @param string $username
+     * @return mixed User object if found, false otherwise
+     */
+    public static function findByUsername($username)
+    {
+        $sql = 'SELECT * 
+                FROM users 
+                WHERE user_name = :username';
+        $db = static::getDB();
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+
+        $stmt->setFetchMode(PDO::FETCH_CLASS, get_called_class());
+        $stmt->execute();
+
+        return $stmt->fetch();
+    }
+
+    /**
      * Delete user
      *
      * @param string $id User ID
@@ -168,15 +190,15 @@ class User extends \Core\Model
     }
 
     /**
-     * Authenticate a user by email and password. User account has to be active.
+     * Authenticate a user by username and password. User account has to be active.
      *
-     * @param string $email
+     * @param string $username
      * @param string $password Password of user
      * @return mixed The user object or false if authentication fails
      */
-    public static function authenticate($email, $password)
+    public static function authenticate($username, $password)
     {
-        $user = static::findByEmail($email);
+        $user = static::findByUsername($username);
 
         if ($user && $user->is_active) {
 

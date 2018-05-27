@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Registrieren{% endblock %}
+{% block customCSS %}<link rel="stylesheet" href="/css/login.css">{% endblock %}
+
+{% block body %}
+    <div class="blur"></div>
+    <form class="form-signin" action="/signup/create" method="post" id="formSignup">
+        <input type="text" name="username" id="inputUsername" class="form-control" placeholder="Benutzername" required autofocus>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="E-Mail Adresse" required>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
+        {% if flash_messages %}
+            <div class="alert alert-danger" role="alert">
+                <ul>
+                    {% for message in flash_messages %}
+                        <li>{{ message.body }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-bottom:2px">Registrieren</button>
+        <a href="/" class="float-right" style="margin-top:3px">Zum Login</a>
+    </form>
+{% endblock %}
+
+{% block footer %}
+    <script src="/js/hideShowPassword.min.js"></script>
+    <script src="/js/app.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            /**
+              * Show password toggle button
+              */
+            $('#inputPassword').hideShowPassword({
+                show: false,
+                innerToggle: 'focus'
+            });
+        });
+    </script>
+{% endblock %}

@@ -19,9 +19,9 @@ class Signup extends \Core\Controller
      *
      * @return void
      */
-    public function newAction()
+    public function indexAction()
     {
-        View::renderTemplate('User/Signup/new.html');
+        View::renderTemplate('User/Signup/signup.html');
     }
 
     /**
@@ -39,7 +39,7 @@ class Signup extends \Core\Controller
 
         }
 
-        $this->redirect('/signup/new');
+        $this->redirect('/signup');
     }
 
     /**
