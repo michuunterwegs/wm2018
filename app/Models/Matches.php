@@ -20,13 +20,13 @@ class Matches extends \Core\Model
      */
     public static function getAll()
     {
-        $sql = "SELECT *
+        $sql = "SELECT match_type, match_type_id, match_start, team_1, team_1_id, team_2, team_2_id
                 FROM view_matches
                 ORDER BY match_start";
         $db = static::getDB(Config::get('DB_NAME'));
         $stmt = $db->prepare($sql);
         $stmt->execute();
-        $matches = $stmt->fetchAll(PDO::FETCH_CLASS, get_called_class());
+        $matches = $stmt->fetchAll(PDO::FETCH_GROUP);
 
         return $matches;
     }

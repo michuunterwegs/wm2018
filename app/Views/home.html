@@ -3,27 +3,66 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-    <div class="container">
-        <table class="table">
-            <thead>
-                <tr>
-                <th scope="col"></th>
-                <th scope="col">Team 1</th>
-                <th scope="col">Team 2</th>
-                <th scope="col">Typ</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for match in matches %}
-                <tr>
-                    <td scope="row">{{ match.match_start }}</td>
-                    <td><img src="/images/country_flags/{{ match.team_1_id }}.png" style="height:17px;width:25px"> {{ match.team_1 }}</td>
-                    <td><img src="/images/country_flags/{{ match.team_2_id }}.png" style="height:17px;width:25px"> {{ match.team_2 }}</td>
-                    <td>{{ match.match_type }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-        <a href="/logout">Logout</a><br><br>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <div class="container">
+            <a class="navbar-brand" href="/">WM 2018</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ current_user.user_name }} </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown">
+                            <a class="dropdown-item" href="#">Profil</a>
+                            <a class="dropdown-item" href="/logout">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        {% for match_type, ss in matches %}
+            <div class="card" style="margin-top:10px">
+                <div class="card-body" data-toggle="collapse" data-parent="#accordion" data-target="#collapseSeason{{ loop.index }}" style="padding:10px 0px 10px 15px;cursor:pointer">
+                        <h5 class="accordion-toggl card-title" style="margin:0px">{{ match_type }}<span class="glyphicon glyphicon-chevron-down pull-right"></span></h5>
+                </div>
+                <div id="collapseSeason{{ loop.index }}" class="panel-collapse collapse">
+                    <ul class="list-group list-group-flush">
+                        <table class="table" style="margin-bottom:0px">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Ich</th>
+                                    <th scope="col">User1</th>
+                                    <th scope="col">User2</th>
+                                    <th scope="col">User3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for match in ss %}
+                                <tr>
+                                    <td scope="row">{{ match.match_start|date("d.m.Y H:i") }} Uhr</td>
+                                    <td><img src="/images/country_flags/{{ match.team_1_id }}.png" style="height:17px;width:25px"> {{ match.team_1 }}</td>
+                                    <td>:</td>
+                                    <td><img src="/images/country_flags/{{ match.team_2_id }}.png" style="height:17px;width:25px"> {{ match.team_2 }}</td>
+                                    <td>0:0</td>
+                                    <td>0:0</td>
+                                    <td>0:0</td>
+                                    <td>0:0</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </ul>   
+                </div>
+            </div>
+        {% endfor %}
+        <br>
+    </main>
 {% endblock %}
