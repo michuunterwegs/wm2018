@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Core" file="Controller.php" realpath="H:/XAMPP/htdocs/app/Core/Controller.php" size="5312" time="2018-05-21T09:55:27+00:00" unixtime="1526896527" sha1="47803c8a455fac3937c1e28f8ae5589849071ee8" relative="Core/Controller.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Core" file="Controller.php" realpath="H:/XAMPP/htdocs/app/Core/Controller.php" size="5317" time="2018-05-24T21:01:28+00:00" unixtime="1527195688" sha1="bbf3b6755147b4abd20432e28b08ce9a4beb5a0d" relative="Core/Controller.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -314,6 +314,9 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$this</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">404</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>

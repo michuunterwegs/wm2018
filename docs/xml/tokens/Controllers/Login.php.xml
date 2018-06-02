@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Controllers" file="Login.php" realpath="H:/XAMPP/htdocs/app/Controllers/Login.php" size="875" time="2018-05-21T10:04:03+00:00" unixtime="1526897043" sha1="05ecd5e58c525133393e52573318c8dca77f32dc" relative="Controllers/Login.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Controllers" file="Login.php" realpath="H:/XAMPP/htdocs/app/Controllers/Login.php" size="906" time="2018-05-27T15:55:15+00:00" unixtime="1527436515" sha1="dac04971274212d264f16f0baf312021e9e6b8c0" relative="Controllers/Login.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -164,16 +164,24 @@
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">authenticate</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_VARIABLE">$_POST</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'email'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">data</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'username'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_COMMA">,</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$_POST</token>
-    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">data</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'password'</token>
-    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>

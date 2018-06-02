@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Core\Error" namespace="Core" name="Error" abstract="false" final="false" start="10" end="57">
-  <file path="H:/XAMPP/htdocs/app/Core" file="Error.php" realpath="H:/XAMPP/htdocs/app/Core/Error.php" size="1559" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="e537251c7ef653f3ba1a3a85347d016137737b71" relative="Core/Error.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Core\Error" namespace="Core" name="Error" abstract="false" final="false" start="10" end="58">
+  <file path="H:/XAMPP/htdocs/app/Core" file="Error.php" realpath="H:/XAMPP/htdocs/app/Core/Error.php" size="1589" time="2018-05-24T20:40:17+00:00" unixtime="1527194417" sha1="06332cb69e7350cda3c70d9994d5725dbbeaec8b" relative="Core/Error.php"/>
   <docblock>
     <description compact="Error and exception handler">PHP version 7.0</description>
   </docblock>
@@ -20,7 +20,7 @@
     <parameter name="file" byreference="false" type="{unknown}"/>
     <parameter name="line" byreference="false" type="{unknown}"/>
   </method>
-  <method name="exceptionHandler" start="35" end="56" abstract="false" final="false" static="true" visibility="public">
+  <method name="exceptionHandler" start="35" end="57" abstract="false" final="false" static="true" visibility="public">
     <docblock>
       <description compact="Exception handler."/>
       <param description="The exception" type="object" variable="$exception">

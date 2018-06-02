@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Core\Controller" namespace="Core" name="Controller" abstract="true" final="false" start="14" end="219">
-  <file path="H:/XAMPP/htdocs/app/Core" file="Controller.php" realpath="H:/XAMPP/htdocs/app/Core/Controller.php" size="5312" time="2018-05-21T09:55:27+00:00" unixtime="1526896527" sha1="47803c8a455fac3937c1e28f8ae5589849071ee8" relative="Core/Controller.php"/>
+  <file path="H:/XAMPP/htdocs/app/Core" file="Controller.php" realpath="H:/XAMPP/htdocs/app/Core/Controller.php" size="5317" time="2018-05-24T21:01:28+00:00" unixtime="1527195688" sha1="bbf3b6755147b4abd20432e28b08ce9a4beb5a0d" relative="Core/Controller.php"/>
   <docblock>
     <description compact="Base controller">PHP version 7.0</description>
   </docblock>
@@ -114,12 +114,8 @@
     </docblock>
   </method>
   <extenders>
-    <extender full="Controllers\Authenticated" namespace="Controllers" name="Authenticated"/>
     <extender full="Controllers\Home" namespace="Controllers" name="Home"/>
     <extender full="Controllers\Login" namespace="Controllers" name="Login"/>
-    <extender full="Controllers\Logout" namespace="Controllers" name="Logout"/>
-    <extender full="Controllers\Password" namespace="Controllers" name="Password"/>
-    <extender full="Controllers\Profile" namespace="Controllers" name="Profile"/>
     <extender full="Controllers\Signup" namespace="Controllers" name="Signup"/>
   </extenders>
 </class>

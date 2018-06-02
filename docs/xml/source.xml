@@ -3,26 +3,27 @@
   <dir name="H:/XAMPP/htdocs/app">
     <dir name="Controllers">
       <file name="Authenticated.php" size="397" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="e6c2028017f02185122dc75b2f71b0f25f5bc406" xml="tokens/Controllers/Authenticated.php.xml"/>
-      <file name="Home.php" size="516" time="2018-05-21T09:54:29+00:00" unixtime="1526896469" sha1="4d6d07946d3a5218d54d940418e2c61f047b4b7c" xml="tokens/Controllers/Home.php.xml"/>
-      <file name="Login.php" size="875" time="2018-05-21T10:04:03+00:00" unixtime="1526897043" sha1="05ecd5e58c525133393e52573318c8dca77f32dc" xml="tokens/Controllers/Login.php.xml"/>
+      <file name="Home.php" size="616" time="2018-06-01T18:24:42+00:00" unixtime="1527877482" sha1="46e154b576487d0f3725226ce677b2a513101195" xml="tokens/Controllers/Home.php.xml"/>
+      <file name="Login.php" size="906" time="2018-05-27T15:55:15+00:00" unixtime="1527436515" sha1="dac04971274212d264f16f0baf312021e9e6b8c0" xml="tokens/Controllers/Login.php.xml"/>
       <file name="Logout.php" size="926" time="2018-05-21T10:04:55+00:00" unixtime="1526897095" sha1="022f32197090c4d3d1be61f8358f7e30bf70a1b3" xml="tokens/Controllers/Logout.php.xml"/>
       <file name="Password.php" size="2611" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="e3b16bfc2291efc8de7324cc6db31a0458ce433e" xml="tokens/Controllers/Password.php.xml"/>
       <file name="Profile.php" size="1040" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="8d2c5c88acc83bdb1ed25fc5f37b2de27dd9578d" xml="tokens/Controllers/Profile.php.xml"/>
-      <file name="Signup.php" size="1259" time="2018-05-21T09:48:33+00:00" unixtime="1526896113" sha1="1c48b0f2a89f820a9f6fdf068b01c289ff044528" xml="tokens/Controllers/Signup.php.xml"/>
+      <file name="Signup.php" size="1260" time="2018-05-27T15:46:24+00:00" unixtime="1527435984" sha1="7ce0a72aeb512d051da541f9fb4fe6f5e2cf7d3c" xml="tokens/Controllers/Signup.php.xml"/>
     </dir>
     <dir name="Core">
       <file name="Config.php" size="1466" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="8239591d92e2ec611d7df4f279b6ae0c00d8e77c" xml="tokens/Core/Config.php.xml"/>
-      <file name="Controller.php" size="5312" time="2018-05-21T09:55:27+00:00" unixtime="1526896527" sha1="47803c8a455fac3937c1e28f8ae5589849071ee8" xml="tokens/Core/Controller.php.xml"/>
-      <file name="Error.php" size="1559" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="e537251c7ef653f3ba1a3a85347d016137737b71" xml="tokens/Core/Error.php.xml"/>
+      <file name="Controller.php" size="5317" time="2018-05-24T21:01:28+00:00" unixtime="1527195688" sha1="bbf3b6755147b4abd20432e28b08ce9a4beb5a0d" xml="tokens/Core/Controller.php.xml"/>
+      <file name="Error.php" size="1589" time="2018-05-24T20:40:17+00:00" unixtime="1527194417" sha1="06332cb69e7350cda3c70d9994d5725dbbeaec8b" xml="tokens/Core/Error.php.xml"/>
       <file name="Model.php" size="1072" time="2018-05-20T21:03:38+00:00" unixtime="1526850218" sha1="5eb3c982a201aefce4581eb3b5dbeb53eee74311" xml="tokens/Core/Model.php.xml"/>
       <file name="Request.php" size="7012" time="2018-05-20T20:38:12+00:00" unixtime="1526848692" sha1="6b4459e59c169f5d0a6ae6746ba1951b3e00eb4f" xml="tokens/Core/Request.php.xml"/>
-      <file name="Router.php" size="4642" time="2018-05-21T10:01:40+00:00" unixtime="1526896900" sha1="e150d1f815bac2b6a9931dbc6002c40596729a85" xml="tokens/Core/Router.php.xml"/>
+      <file name="Router.php" size="4477" time="2018-05-24T21:01:54+00:00" unixtime="1527195714" sha1="f1c2fcc14a409b8bf9fe275f5f9c3dd04612c7a7" xml="tokens/Core/Router.php.xml"/>
       <file name="Session.php" size="2841" time="2018-05-21T09:12:28+00:00" unixtime="1526893948" sha1="a17aec2d1400de0a1380513ef3cd797996f6e70c" xml="tokens/Core/Session.php.xml"/>
       <file name="View.php" size="1773" time="2018-05-21T08:59:24+00:00" unixtime="1526893164" sha1="66b31833520dc515de4fe2f26e194eb6cb939e6e" xml="tokens/Core/View.php.xml"/>
     </dir>
     <dir name="Models">
+      <file name="Matches.php" size="703" time="2018-06-02T10:48:24+00:00" unixtime="1527936504" sha1="e4475e0b5dd6f2186b4040d02c2b03c414b14f58" xml="tokens/Models/Matches.php.xml"/>
       <file name="RememberedLogin.php" size="1828" time="2018-05-20T21:04:09+00:00" unixtime="1526850249" sha1="82627c00953155f2a450e57fa9fc7fd7147fb4db" xml="tokens/Models/RememberedLogin.php.xml"/>
-      <file name="User.php" size="15063" time="2018-05-21T09:54:12+00:00" unixtime="1526896452" sha1="fa7e4d9da66b662600eba09a3e328b2a08770eba" xml="tokens/Models/User.php.xml"/>
+      <file name="User.php" size="16322" time="2018-05-27T16:07:48+00:00" unixtime="1527437268" sha1="27253b0f5d64117b83aa0f62d6dbb097570d6035" xml="tokens/Models/User.php.xml"/>
     </dir>
     <dir name="Utilities">
       <file name="Auth.php" size="2926" time="2018-05-21T09:57:15+00:00" unixtime="1526896635" sha1="901299518a352bc6e2d5e1c6e8d56c34eb1acd9e" xml="tokens/Utilities/Auth.php.xml"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Controllers" file="Home.php" realpath="H:/XAMPP/htdocs/app/Controllers/Home.php" size="516" time="2018-05-21T09:54:29+00:00" unixtime="1526896469" sha1="4d6d07946d3a5218d54d940418e2c61f047b4b7c" relative="Controllers/Home.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Controllers" file="Home.php" realpath="H:/XAMPP/htdocs/app/Controllers/Home.php" size="616" time="2018-06-01T18:24:42+00:00" unixtime="1527877482" sha1="46e154b576487d0f3725226ce677b2a513101195" relative="Controllers/Home.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -34,9 +34,9 @@
     <token name="T_USE">use</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_NS_SEPARATOR">\</token>
-    <token name="T_STRING">Utilities</token>
+    <token name="T_STRING">Models</token>
     <token name="T_NS_SEPARATOR">\</token>
-    <token name="T_STRING">Auth</token>
+    <token name="T_STRING">Matches</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="8">
@@ -45,26 +45,35 @@
     <token name="T_NS_SEPARATOR">\</token>
     <token name="T_STRING">Utilities</token>
     <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Auth</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="9">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Utilities</token>
+    <token name="T_NS_SEPARATOR">\</token>
     <token name="T_STRING">Flash</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="9"/>
-  <line no="10">
+  <line no="10"/>
+  <line no="11">
     <token name="T_DOC_COMMENT">/**</token>
   </line>
-  <line no="11">
+  <line no="12">
     <token name="T_DOC_COMMENT"> * Home controller</token>
   </line>
-  <line no="12">
+  <line no="13">
     <token name="T_DOC_COMMENT"> *</token>
   </line>
-  <line no="13">
+  <line no="14">
     <token name="T_DOC_COMMENT"> * PHP version 7.0</token>
   </line>
-  <line no="14">
+  <line no="15">
     <token name="T_DOC_COMMENT"> */</token>
   </line>
-  <line no="15">
+  <line no="16">
     <token name="T_CLASS">class</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_STRING">Home</token>
@@ -76,29 +85,29 @@
     <token name="T_NS_SEPARATOR">\</token>
     <token name="T_STRING">Controller</token>
   </line>
-  <line no="16">
-    <token name="T_PHPDOX_OPEN_CURLY">{</token>
-  </line>
   <line no="17">
-    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
   <line no="18">
     <token name="T_WHITESPACE">    </token>
-    <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="19">
-    <token name="T_DOC_COMMENT">     * Show the signup page</token>
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
   </line>
   <line no="20">
-    <token name="T_DOC_COMMENT">     *</token>
+    <token name="T_DOC_COMMENT">     * Show the signup page</token>
   </line>
   <line no="21">
-    <token name="T_DOC_COMMENT">     * @return void</token>
+    <token name="T_DOC_COMMENT">     *</token>
   </line>
   <line no="22">
-    <token name="T_DOC_COMMENT">     */</token>
+    <token name="T_DOC_COMMENT">     * @return void</token>
   </line>
   <line no="23">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="24">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -108,11 +117,11 @@
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
-  <line no="24">
+  <line no="25">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="25">
+  <line no="26">
     <token name="T_WHITESPACE">        </token>
     <token name="T_IF">if</token>
     <token name="T_WHITESPACE"> </token>
@@ -126,19 +135,40 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="26"/>
   <line no="27">
+    <token name="T_WHITESPACE">            </token>
+  </line>
+  <line no="28">
     <token name="T_WHITESPACE">            </token>
     <token name="T_STRING">View</token>
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">renderTemplate</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'home.html'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'matches'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Matches</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getAll</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="30">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="28"/>
-  <line no="29">
+  <line no="31"/>
+  <line no="32">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
     <token name="T_WHITESPACE"> </token>
@@ -146,8 +176,8 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_OPEN_CURLY">{</token>
   </line>
-  <line no="30"/>
-  <line no="31">
+  <line no="33"/>
+  <line no="34">
     <token name="T_WHITESPACE">            </token>
     <token name="T_STRING">View</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -157,16 +187,16 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="32">
+  <line no="35">
     <token name="T_WHITESPACE">        </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="33">
+  <line no="36">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="34">
+  <line no="37">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="35"/>
+  <line no="38"/>
 </source>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Controllers\Home" namespace="Controllers" name="Home" abstract="false" final="false" start="15" end="34">
-  <file path="H:/XAMPP/htdocs/app/Controllers" file="Home.php" realpath="H:/XAMPP/htdocs/app/Controllers/Home.php" size="516" time="2018-05-21T09:54:29+00:00" unixtime="1526896469" sha1="4d6d07946d3a5218d54d940418e2c61f047b4b7c" relative="Controllers/Home.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Controllers\Home" namespace="Controllers" name="Home" abstract="false" final="false" start="16" end="37">
+  <file path="H:/XAMPP/htdocs/app/Controllers" file="Home.php" realpath="H:/XAMPP/htdocs/app/Controllers/Home.php" size="616" time="2018-06-01T18:24:42+00:00" unixtime="1527877482" sha1="46e154b576487d0f3725226ce677b2a513101195" relative="Controllers/Home.php"/>
   <docblock>
     <description compact="Home controller">PHP version 7.0</description>
   </docblock>
   <extends full="Core\Controller" namespace="Core" name="Controller"/>
-  <method name="startAction" start="23" end="33" abstract="false" final="false" static="false" visibility="public">
+  <method name="startAction" start="24" end="36" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Show the signup page"/>
       <return type="object">

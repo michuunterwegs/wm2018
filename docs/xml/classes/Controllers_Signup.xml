@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Controllers\Signup" namespace="Controllers" name="Signup" abstract="false" final="false" start="14" end="66">
-  <file path="H:/XAMPP/htdocs/app/Controllers" file="Signup.php" realpath="H:/XAMPP/htdocs/app/Controllers/Signup.php" size="1259" time="2018-05-21T09:48:33+00:00" unixtime="1526896113" sha1="1c48b0f2a89f820a9f6fdf068b01c289ff044528" relative="Controllers/Signup.php"/>
+  <file path="H:/XAMPP/htdocs/app/Controllers" file="Signup.php" realpath="H:/XAMPP/htdocs/app/Controllers/Signup.php" size="1260" time="2018-05-27T15:46:24+00:00" unixtime="1527435984" sha1="7ce0a72aeb512d051da541f9fb4fe6f5e2cf7d3c" relative="Controllers/Signup.php"/>
   <docblock>
     <description compact="Signup controller">PHP version 7.0</description>
   </docblock>
   <extends full="Core\Controller" namespace="Core" name="Controller"/>
-  <method name="newAction" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
+  <method name="indexAction" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Show the signup page"/>
       <return type="object">

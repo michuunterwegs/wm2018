@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Core" file="Error.php" realpath="H:/XAMPP/htdocs/app/Core/Error.php" size="1559" time="2018-05-20T20:33:48+00:00" unixtime="1526848428" sha1="e537251c7ef653f3ba1a3a85347d016137737b71" relative="Core/Error.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Core" file="Error.php" realpath="H:/XAMPP/htdocs/app/Core/Error.php" size="1589" time="2018-05-24T20:40:17+00:00" unixtime="1527194417" sha1="06332cb69e7350cda3c70d9994d5725dbbeaec8b" relative="Core/Error.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -244,7 +244,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'/logs/'</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/../logs/'</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_DOT">.</token>
     <token name="T_WHITESPACE"> </token>
@@ -357,8 +357,17 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="52"/>
-  <line no="53">
+  <line no="52">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$message</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONCAT_EQUAL">.=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"\n"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="53"/>
+  <line no="54">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">error_log</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
@@ -366,8 +375,8 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="54"/>
-  <line no="55">
+  <line no="55"/>
+  <line no="56">
     <token name="T_WHITESPACE">        </token>
     <token name="T_STRING">View</token>
     <token name="T_DOUBLE_COLON">::</token>
@@ -381,12 +390,12 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="56">
+  <line no="57">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="57">
+  <line no="58">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
-  <line no="58"/>
+  <line no="59"/>
 </source>

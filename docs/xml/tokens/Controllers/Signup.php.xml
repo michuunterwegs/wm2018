@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Controllers" file="Signup.php" realpath="H:/XAMPP/htdocs/app/Controllers/Signup.php" size="1259" time="2018-05-21T09:48:33+00:00" unixtime="1526896113" sha1="1c48b0f2a89f820a9f6fdf068b01c289ff044528" relative="Controllers/Signup.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="H:/XAMPP/htdocs/app/Controllers" file="Signup.php" realpath="H:/XAMPP/htdocs/app/Controllers/Signup.php" size="1260" time="2018-05-27T15:46:24+00:00" unixtime="1527435984" sha1="7ce0a72aeb512d051da541f9fb4fe6f5e2cf7d3c" relative="Controllers/Signup.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -95,7 +95,7 @@
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">newAction</token>
+    <token name="T_STRING">indexAction</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
   </line>
@@ -109,7 +109,7 @@
     <token name="T_DOUBLE_COLON">::</token>
     <token name="T_STRING">renderTemplate</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'User/Signup/new.html'</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'User/Signup/signup.html'</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
@@ -224,7 +224,7 @@
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">redirect</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'/signup/new'</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/signup'</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>

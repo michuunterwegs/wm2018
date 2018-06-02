@@ -77,7 +77,9 @@
                     </li><li>public static boolean <a title="Models\User" href="../classes/Models_User/register.xhtml">register</a>()
                     </li><li>private static boolean <a title="Models\User" href="../classes/Models_User/validateRegistrationData.xhtml">validateRegistrationData</a>()
                     </li><li>public static boolean <a title="Models\User" href="../classes/Models_User/emailExists.xhtml">emailExists</a>()
+                    </li><li>public static boolean <a title="Models\User" href="../classes/Models_User/usernameExists.xhtml">usernameExists</a>()
                     </li><li>public static mixed <a title="Models\User" href="../classes/Models_User/findByEmail.xhtml">findByEmail</a>()
+                    </li><li>public static mixed <a title="Models\User" href="../classes/Models_User/findByUsername.xhtml">findByUsername</a>()
                     </li><li>public static void <a title="Models\User" href="../classes/Models_User/delete.xhtml">delete</a>()
                     </li><li>public static mixed <a title="Models\User" href="../classes/Models_User/authenticate.xhtml">authenticate</a>()
                     </li><li>public static mixed <a title="Models\User" href="../classes/Models_User/findByID.xhtml">findByID</a>()
@@ -139,7 +141,7 @@
             <li id="activate"><a title="Models\User" href="../classes/Models_User/activate.xhtml">activate()</a>
                 — Activate the user account with the specified activation token</li>
             <li id="authenticate"><a title="Models\User" href="../classes/Models_User/authenticate.xhtml">authenticate()</a>
-                — Authenticate a user by email and password. User account has to be active.</li>
+                — Authenticate a user by username and password. User account has to be active.</li>
             <li id="delete"><a title="Models\User" href="../classes/Models_User/delete.xhtml">delete()</a>
                 — Delete user</li>
             <li id="emailExists"><a title="Models\User" href="../classes/Models_User/emailExists.xhtml">emailExists()</a>
@@ -150,6 +152,8 @@
                 — Find a user model by ID</li>
             <li id="findByPasswordReset"><a title="Models\User" href="../classes/Models_User/findByPasswordReset.xhtml">findByPasswordReset()</a>
                 — Find a user model by password reset token and expiry</li>
+            <li id="findByUsername"><a title="Models\User" href="../classes/Models_User/findByUsername.xhtml">findByUsername()</a>
+                — Find a user model by username</li>
             <li id="getAll"><a title="Models\User" href="../classes/Models_User/getAll.xhtml">getAll()</a>
                 — Get all users</li>
             <li id="register"><a title="Models\User" href="../classes/Models_User/register.xhtml">register()</a>
@@ -166,6 +170,8 @@
                 — Update the users last login</li>
             <li id="updateProfile"><a title="Models\User" href="../classes/Models_User/updateProfile.xhtml">updateProfile()</a>
                 — Update the user profile</li>
+            <li id="usernameExists"><a title="Models\User" href="../classes/Models_User/usernameExists.xhtml">usernameExists()</a>
+                — See if a user record already exists with the specified username</li>
           </ul>
           <h3>Inherited from <a title="Core\Model" href="../classes/Core_Model.xhtml">Core\Model</a></h3>
           <h4>protected</h4>

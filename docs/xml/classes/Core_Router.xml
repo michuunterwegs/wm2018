@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Core\Router" namespace="Core" name="Router" abstract="false" final="false" start="10" end="168">
-  <file path="H:/XAMPP/htdocs/app/Core" file="Router.php" realpath="H:/XAMPP/htdocs/app/Core/Router.php" size="4642" time="2018-05-21T10:01:40+00:00" unixtime="1526896900" sha1="e150d1f815bac2b6a9931dbc6002c40596729a85" relative="Core/Router.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Core\Router" namespace="Core" name="Router" abstract="false" final="false" start="10" end="162">
+  <file path="H:/XAMPP/htdocs/app/Core" file="Router.php" realpath="H:/XAMPP/htdocs/app/Core/Router.php" size="4477" time="2018-05-24T21:01:54+00:00" unixtime="1527195714" sha1="f1c2fcc14a409b8bf9fe275f5f9c3dd04612c7a7" relative="Core/Router.php"/>
   <docblock>
     <description compact="Routes the http request and calls the matching controller/action method">PHP version 7.0</description>
   </docblock>
@@ -42,7 +42,7 @@
       <return type="array"/>
     </docblock>
   </method>
-  <method name="dispatch" start="65" end="97" abstract="false" final="false" static="false" visibility="public">
+  <method name="dispatch" start="65" end="91" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Dispatch the route, creating the controller object and calling the action method"/>
       <param description="Request object" type="object" variable="$request">
@@ -56,7 +56,7 @@
       <type full="Core\Request" namespace="Core" name="Request"/>
     </parameter>
   </method>
-  <method name="match" start="106" end="126" abstract="false" final="false" static="false" visibility="private">
+  <method name="match" start="100" end="120" abstract="false" final="false" static="false" visibility="private">
     <docblock>
       <description compact="Match the route to the routes in the routing table, setting the $params property if a route is found."/>
       <param description="The route URL" type="string" variable="$url"/>
@@ -64,7 +64,7 @@
     </docblock>
     <parameter name="url" byreference="false" type="{unknown}"/>
   </method>
-  <method name="convertToStudlyCaps" start="135" end="138" abstract="false" final="false" static="false" visibility="protected">
+  <method name="convertToStudlyCaps" start="129" end="132" abstract="false" final="false" static="false" visibility="protected">
     <docblock>
       <description compact="Convert the string with hyphens to StudlyCaps, e.g. post-authors =&gt; PostAuthors"/>
       <param description="The string to convert" type="string" variable="$string"/>
@@ -72,7 +72,7 @@
     </docblock>
     <parameter name="string" byreference="false" type="{unknown}"/>
   </method>
-  <method name="convertToCamelCase" start="147" end="150" abstract="false" final="false" static="false" visibility="protected">
+  <method name="convertToCamelCase" start="141" end="144" abstract="false" final="false" static="false" visibility="protected">
     <docblock>
       <description compact="Convert the string with hyphens to camelCase, e.g. add-new =&gt; addNew"/>
       <param description="The string to convert" type="string" variable="$string"/>
@@ -80,7 +80,7 @@
     </docblock>
     <parameter name="string" byreference="false" type="{unknown}"/>
   </method>
-  <method name="getNamespace" start="158" end="167" abstract="false" final="false" static="false" visibility="protected">
+  <method name="getNamespace" start="152" end="161" abstract="false" final="false" static="false" visibility="protected">
     <docblock>
       <description compact="Get the namespace for the controller class. The namespace defined in the route parameters is added if present."/>
       <return description="The request URL" type="string"/>

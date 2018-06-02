@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="Controllers\Login" namespace="Controllers" name="Login" abstract="false" final="false" start="15" end="49">
-  <file path="H:/XAMPP/htdocs/app/Controllers" file="Login.php" realpath="H:/XAMPP/htdocs/app/Controllers/Login.php" size="875" time="2018-05-21T10:04:03+00:00" unixtime="1526897043" sha1="05ecd5e58c525133393e52573318c8dca77f32dc" relative="Controllers/Login.php"/>
+  <file path="H:/XAMPP/htdocs/app/Controllers" file="Login.php" realpath="H:/XAMPP/htdocs/app/Controllers/Login.php" size="906" time="2018-05-27T15:55:15+00:00" unixtime="1527436515" sha1="dac04971274212d264f16f0baf312021e9e6b8c0" relative="Controllers/Login.php"/>
   <docblock>
     <description compact="Login controller">PHP version 7.0</description>
   </docblock>
