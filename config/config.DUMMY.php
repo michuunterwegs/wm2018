@@ -13,10 +13,8 @@ return array(
      * Configuration for: Database Connection
      * Define database constants to establish a connection.
      */
-    'DB_HOST' => '',
-    'DB_NAME_USER' => '',
-    'DB_NAME_KODI' => '',
-    'DB_NAME_MEDIA' => '',
+    'DB_HOST' => 'localhost',
+    'DB_NAME' => 'wm_2018',
     'DB_USER' => '',
     'DB_PASSWORD' => '',
     'DB_CHARSET' => 'utf8',
@@ -50,12 +48,14 @@ return array(
     'SESSION_COOKIE_EXPIRY' => 604800,
     'COOKIE_DOMAIN' => '',
     'COOKIE_PATH' => '/',
-    'COOKIE_SECURE' => false,
+    'COOKIE_SECURE' => true,
     'COOKIE_HTTP' => true,
     'COOKIE_SECRET_KEY' => '',
 
     /**
      * Configuration for: Encryption Keys
+     * 
+     * Set a random 256-bit key, e.g. get one from https://randomkeygen.com/
      */
     'SECRET_KEY' => '',
 
@@ -63,5 +63,5 @@ return array(
     /**
      * Configuration for: Misc
      */
-    'SHOW_ERRORS' => 1
+    'SHOW_ERRORS' => 0
 );
