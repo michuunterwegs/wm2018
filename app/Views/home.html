@@ -3,5 +3,27 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-    <a href="/logout">Logout</a>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col"></th>
+                <th scope="col">Team 1</th>
+                <th scope="col">Team 2</th>
+                <th scope="col">Typ</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for match in matches %}
+                <tr>
+                    <td scope="row">{{ match.match_start }}</td>
+                    <td><img src="/images/country_flags/{{ match.team_1_id }}.png" style="height:17px;width:25px"> {{ match.team_1 }}</td>
+                    <td><img src="/images/country_flags/{{ match.team_2_id }}.png" style="height:17px;width:25px"> {{ match.team_2 }}</td>
+                    <td>{{ match.match_type }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/logout">Logout</a><br><br>
+    </div>
 {% endblock %}

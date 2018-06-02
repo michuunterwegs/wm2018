@@ -4,6 +4,7 @@ namespace Controllers;
 
 use \Core\View;
 use \Models\User;
+use \Models\Matches;
 use \Utilities\Auth;
 use \Utilities\Flash;
 
@@ -23,8 +24,10 @@ class Home extends \Core\Controller
     public function startAction()
     {
         if (Auth::getUser()) {
-
-            View::renderTemplate('home.html');
+            
+            View::renderTemplate('home.html', [
+                'matches' => Matches::getAll()
+            ]);
 
         } else {
 
